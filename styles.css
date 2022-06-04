@@ -119,8 +119,9 @@ body {
 }
 
 .contact-info__item-icon {
-    height: 1.1428rem;
+    height: 1.2rem;
     vertical-align: text-bottom;
+    padding-top: 3px;
 }
 
 .contact-info__avatar {
