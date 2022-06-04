@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 
     --primary-text-color: #181820;
@@ -100,7 +100,7 @@ body {
     color: var(--secondary-text-color);
     text-decoration: none;
     display: flex;
-    justify-content: start;
+    justify-content: start;   
 }
 
 .contact-info__item:not(:last-child) {
@@ -119,8 +119,9 @@ body {
 }
 
 .contact-info__item-icon {
-    height: 1.1428rem;
+    height: 1.4rem;
     vertical-align: text-bottom;
+    padding-top: 3px;
 }
 
 .contact-info__avatar {
