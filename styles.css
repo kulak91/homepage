@@ -17,6 +17,21 @@ body {
     --text-decoration-color: #ff9a00;
 }
 
+.pink-mode {
+    background:  repeating-linear-gradient(
+        45deg,
+    #F5A3C8,
+    #F5A3C8 40px,
+    #ED0D92 20px,
+    #ED0D92 80px);
+  --text-decoration-color: #0E000A;
+  --primary-text-color: #095d9a;
+}
+
+.white-mode {
+    background-color: #F2F1F2;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 30px;
@@ -263,3 +278,31 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+/* Testing Avatar Shining */
+
+.glow {
+    text-align: center;
+    display: block;
+  }
+.glow img:hover {
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff,
+    0 0 20px #F5A3C8, 0 0 30px #F5A3C8,
+    0 0 40px #F5A3C8, 0 0 50px #F5A3C8;
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate;
+  }
+  
+  @-webkit-keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #F5A3C8,
+        0 0 70px #F5A3C8, 0 0 80px #F5A3C8;
+    }
+  }
+  
+  @keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #F5A3C8,
+        0 0 70px #F5A3C8, 0 0 80px #F5A3C8;
+    }
+  }
