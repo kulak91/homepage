@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 
     --primary-text-color: #181820;
@@ -100,7 +100,7 @@ body {
     color: var(--secondary-text-color);
     text-decoration: none;
     display: flex;
-    justify-content: start;
+    justify-content: start;   
 }
 
 .contact-info__item:not(:last-child) {
