@@ -1,3 +1,4 @@
+// Changing palettes section
 let avatar = document.getElementById('avatar');
 let introText = document.querySelector('.intro_text')
 let funny = "Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT, Full Stack Evil, all I do is sleep and try to help out hoomans with their projects whenever they need me."
@@ -6,8 +7,8 @@ let normal = "Hello. I am a self-taught developer. Still got a lot of topics to 
 function changeImage() {
     let element = document.body;
     let resume = document.querySelector(".resume");
-    resume.classList.toggle("white-mode")
     element.classList.toggle("pink-mode");
+    resume.classList.toggle("white-mode")
 
     if(avatar.src.includes('avatar')) {
         avatar.src = avatar.src.replace("avatar", "kitty");
@@ -15,7 +16,7 @@ function changeImage() {
     } else {
         avatar.src = avatar.src.replace("kitty", "avatar");
         changeIntro("normal")
-    }   
+    }
     
 }
 
@@ -29,3 +30,5 @@ function changeIntro(mode) {
     }
      
 }
+
+// ...
