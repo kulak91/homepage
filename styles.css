@@ -263,3 +263,31 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+/* Testing Avatar Shining */
+
+.glow {
+    text-align: center;
+    display: block;
+  }
+.glow img:hover {
+    color: #fff;
+    box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #F5A3C8, 0 0 30px #F5A3C8,
+      0 0 40px #F5A3C8, 0 0 50px #F5A3C8;
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate;
+  }
+  
+  @-webkit-keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #F5A3C8,
+        0 0 70px #F5A3C8, 0 0 80px #F5A3C8;
+    }
+  }
+  
+  @keyframes blink {
+    100% {
+      box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #F5A3C8,
+        0 0 70px #F5A3C8, 0 0 80px #F5A3C8;
+    }
+  }
