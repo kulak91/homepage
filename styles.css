@@ -17,6 +17,25 @@ body {
     --text-decoration-color: #ff9a00;
 }
 
+.pink-mode {
+    background:  repeating-linear-gradient(
+  45deg,
+  #F5A3C8,
+  #F5A3C8 40px,
+  #ED0D92 20px,
+  #ED0D92 80px);
+  --text-decoration-color: #0E000A;
+  --primary-text-color: #ff9a00;
+    --secondary-text-color: #5c5c62;
+    --durability-text-color: #6a737d9c;
+    --icon-color: #6a737d;
+    --border-color: #ff9a0045;
+}
+
+.white-mode {
+    background-color: #F2F1F2;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 30px;
