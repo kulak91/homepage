@@ -1,8 +1,8 @@
 // Changing palettes section
 let avatar = document.getElementById('avatar');
 let introText = document.querySelector('.intro_text')
-let funny = "Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT, Full Stack Evil, all I do is sleep and try to help out hoomans with their projects whenever they need me."
-let normal = "Hello. I am a self-taught developer. Still got a lot of topics to learn. Solving riddles is my passion and programming fulfills it. My dream is to work in IT." 
+let funnyIntro = "Meow. I am a Binary Studio cat. Still got 7 lives. Work in IT, Full Stack Evil, all I do is sleep and try to help out hoomans with their projects whenever they need me."
+let normalIntro = "Hello. I am a self-taught developer. Still got a lot of topics to learn. Solving riddles is my passion and programming fulfills it. My dream is to work in IT." 
 
 function changeImage() {
     let element = document.body;
@@ -23,12 +23,10 @@ function changeImage() {
 function changeIntro(mode) {
     switch(mode) {
         case "kitty":
-        introText.textContent = funny;
+        introText.textContent = funnyIntro;
         break;
         case "normal":
-        introText.textContent = normal;
+        introText.textContent = normalIntro;
     }
      
 }
-
-// ...
