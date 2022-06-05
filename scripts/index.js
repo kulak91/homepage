@@ -30,5 +30,3 @@ function changeIntro(mode) {
     }
      
 }
-
-// Timeline 
