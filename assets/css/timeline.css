@@ -27,15 +27,14 @@
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: inherit;
   z-index: 1;
 }
 
 .timeline ul li div {
-  font-weight: 400;
   position: relative;
   bottom: 0;
   width: 400px;
@@ -43,7 +42,6 @@
   background: 	var(--storyline-container-color);  
   color: var(--storyline-font-color);
   border-radius: 5px;
-  box-shadow: 5px 5px 6px -3px #000000;
 }
 
 .timeline ul li div::before {

@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     line-height: 1.5;
     overflow-x: hidden;
     --primary-text-color: #181820;
@@ -31,6 +32,7 @@ body {
   --border-color: 	#fbd8b7;
   --storyline-container-color: #095d9a;
   --storyline-font-color: #fff;
+  
 }
 
 .white-mode {
@@ -152,6 +154,7 @@ body {
     border: 3px solid;
     border-color: var(--text-decoration-color);
 }
+
 /* Intro and skills styles */
 .intro {
     display: flex;
@@ -311,5 +314,3 @@ body {
         0 0 70px #F5A3C8, 0 0 80px #F5A3C8;
     }
   }
-
-  /* Timeline */
