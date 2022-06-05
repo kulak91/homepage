@@ -15,6 +15,8 @@ body {
     --icon-color: #6a737d;
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
+    --storyline-container-color: #ff9900d8;
+    --storyline-font-color: black;
 }
 
 .pink-mode {
@@ -27,6 +29,8 @@ body {
   --text-decoration-color: 	#5a5858;
   --primary-text-color: #095d9a;
   --border-color: 	#fbd8b7;
+  --storyline-container-color: #095d9a;
+  --storyline-font-color: #fff;
 }
 
 .white-mode {
