@@ -8,7 +8,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-
+    overflow-x: hidden;
     --primary-text-color: #181820;
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
@@ -24,8 +24,9 @@ body {
     #F5A3C8 40px,
     #ED0D92 20px,
     #ED0D92 80px);
-  --text-decoration-color: #0E000A;
+  --text-decoration-color: 	#5a5858;
   --primary-text-color: #095d9a;
+  --border-color: 	#fbd8b7;
 }
 
 .white-mode {
@@ -306,3 +307,5 @@ body {
         0 0 70px #F5A3C8, 0 0 80px #F5A3C8;
     }
   }
+
+  /* Timeline */
