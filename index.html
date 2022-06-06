@@ -1,10 +1,292 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Résumé</title>
-  </head>
-  <body>
-    ― Hello World! &#x1F609;
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/757951c16b.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <title>Résumé</title>
+</head>
+
+<body>
+  <!-- Primary content template -->
+  <main>
+    <div class="resume">
+      <div class="container">
+        <div class="resume__block">
+          <h1 class="contact-info__header">Dmytro Kulakov</h1>
+          <h3 class="contact-info__sub-header">Senior Cat Manager</h3>
+
+          <div class="contact_info_container fh">
+            <div class="contact-info__block">
+              <!-- Contacts Location -->
+              <a href="https://shorturl.at/deJR6" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                    </path>
+                  </svg>
+                </div>
+                <span>Mykolaiv, Ukraine</span>
+              </a>
+              <!-- Contacts Github -->
+              <a href="https://github.com/kulak91" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <i class="contact-info__item-icon fa-brands fa-github"></i>
+                </div>
+                <span>kulak91</span>
+              </a>
+              <!-- Contacts Telegram -->
+              <a href="https://telegram.me/desired911" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <i class="contact-info__item-icon fa-solid fa-paper-plane"></i>
+                </div>
+                <span>desired911</span>
+              </a>
+            </div>
+
+            <!-- Contacts Avatar Center -->
+            <div class="contact-info__block contact-info__block--center">
+              <div class="glow">
+                <img class="contact-info__avatar" id="avatar" src="assets/img/avatar.png" alt="Avatar"
+                  onclick="changeImage()">
+              </div>
+            </div>
+
+            <div class="contact-info__block">
+              <!-- Contacts LinkedIn  -->
+              <a href="https://www.linkedin.com/in/dmytro-kulakov-45071a132/" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                    </path>
+                  </svg>
+                </div>
+                <span>Dmytro Kulakov</span>
+              </a>
+              <!-- Contacts Phone number -->
+              <a href="tel:380735120123" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <i class="contact-info__item-icon fa-solid fa-mobile-screen"></i>
+                </div>
+                <span>+38(073)-512-01-23</span>
+              </a>
+              <!-- Contacts E-mail -->
+              <a href="mailto:kulakovdmitr@gmail.com" rel="author" class="contact-info__item">
+                <div class="contact-info__item-icon-wrapper">
+                  <i class="contact-info__item-icon fa-solid fa-envelope"></i>
+                </div>
+                <span>kulakovdmitr@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="container">
+          <div class="resume__block">
+            <div class="intro">
+              <div class="intro__icon-wrapper">
+                <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                  </path>
+                </svg>
+              </div>
+              <p class="intro_text">Hello.
+                I am a self-taught developer. Still got a lot of topics to learn.
+                Solving riddles is my passion and programming fulfills it.
+                My dream is to work in IT.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills block -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="skills">
+            <h3 class="skills__header">Skills</h3>
+            <p class="skills__text">HTML5, CSS3, JavaScript, React.js, REST API, DOM API, Git, Node.js</p>
+          </div>
+        </div>
+      </div>
+      <!-- Experience block template -->
+      <div class="container">
+        <div class="resume__block">
+          <div class="main-info fh">
+
+            <div class="experiences">
+              <div class="experiences">
+                <h3 class="experiences__header">Experience</h3>
+                <div class="experiences__company">
+                  <div class="experiences__company-header">
+                    <span class="experiences__company-header-durability">For whole my life</span>
+                    <h3 class="experiences__company-header-name">Theatre Stage</h3>
+                  </div>
+
+                  <div class="experiences__company-project">
+                    <span class="experiences__company-project-role">Acrobatic Artist & Group Leader</span>
+                    <h3 class="experiences__company-project-name">Trampwall Act</h3>
+                    <ul class="experiences__company-project-responsibilities">
+                      <li>Entertained hoomans</li>
+                      <li>Sustained the best level of performance</li>
+                      <li>Matched employer's requests with the possibility of performing acts</li>
+                      <li>Watched my hoomans working</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="additional-info fv">
+              <!-- Additional info -->
+              <div class="additional-info fv">
+                <div class="additional-info__education">
+                  <h3 class="additional-info__education-header">Education</h3>
+                  <div class="additional-info__education-university">
+                    <span class="additional-info__education-university-durability">September 2009 - June 2014</span>
+                    <h3 class="additional-info__education-university-speciality">Management</h3>
+                    <p class="additional-info__education-university-name">National University of Shipbuilding</p>
+                  </div>
+                </div>
+
+                <div class="additional-info__languages">
+                  <h3 class="additional-info__languages-header">Languages</h3>
+                  <p class="additional-info__languages-item">
+                    Russian
+                  </p>
+                  <p class="additional-info__languages-item">
+                    Ukrainian (Native)
+                  </p>
+                  <p class="additional-info__languages-item">
+                    English (Upper-Intermediate)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Timeline -->
+      <div class="container">
+        <div class="resume__block">
+          <section class="intro">
+            <div class="container">
+              <h1 class="timeline-header" onclick="toggleTimeline()">My Storyline</h1>
+            </div>
+          </section>
+
+          <section class="timeline" id="timeline">
+            <ul>
+              <li>
+                <div>
+                  <time>2022 June</time>
+                  <p>Ukraine, Mykolaiv. Writing my own first Front-end Developer Resume</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2022 March</time>
+                  <p>Ukraine, Mykolaiv. Started my new path as a Web Developer</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2022 February</time>
+                  <p>Failed to join 2022 season as an artist in South Korea, though all documents were ready. Artistic
+                    career is over. Temporary?</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2021 December</time>
+                  <p>Thailand, Phuket. Acrobatic artist in private villa</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2021 November</time>
+                  <p>Ukraine, Mykolaiv. Came back home from South Korea full of hopes and plans</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2021 February</time>
+                  <p>South Korea, Seoul. Rejoined Samsung Everland</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2020 October</time>
+                  <p>Ukraine, Mykolaiv. Winter Holidays at home</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2020 March</time>
+                  <p>South Korea, Seoul. Started working in Samsung Everland Resort</P>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2020 January - March</time>
+                  <p>Russia, Moscow. Moskvarium</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2019 December - 2020 January</time>
+                  <p>Lebanon, Beirut Alice in Wonderland casino show</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2019 October - November</time>
+                  <p>Turkey, Antalya. Acrobatic artist in Hotels</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2019 July - October</time>
+                  <p>Indonesia, Jakarta. Acrobatic artist / parkour in Olivia and Max show</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2018 March - 2019 February</time>
+                  <p>Germany. Flic Flac the modern Art of Circus</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2017 September - 2018 March </time>
+                  <p>China, Nanchang. Acrobatic performer in Wanda Amusement Park Porcelain Theatre</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <time>2014 January - 2016 December</time>
+                  <p>China, Shenzhen OCT East Amusement Park </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="scripts/timeline.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+
 </html>
